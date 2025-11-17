@@ -1,0 +1,15 @@
+name = "loreal-routine-worker"
+type = "javascript"
+main = "RESOURCE_cloudflare-worker.js"
+compatibility_date = "2025-11-17"
+
+# Replace with your Cloudflare account id. If you leave this blank you can still
+# `wrangler publish --name <name>` to deploy to your account after `wrangler login`.
+account_id = ""
+
+# When true, `wrangler publish` deploys to the workers.dev subdomain.
+workers_dev = true
+
+[env.production]
+# Optional: override account_id or other settings for production environment
+account_id = ""
